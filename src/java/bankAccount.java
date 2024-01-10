@@ -1,7 +1,7 @@
 /**
  * A bank account program with 'deposit', 'withdraw', and 'transfer' functionalities
  *
- * @author sam ordonez & ross
+ * @author ross & sam ordonez
  * @version 1.0
  */
 
@@ -13,7 +13,6 @@ public class bankAccount
     private final String lastName;
 
     /**
-     *
      * @param balanceCad balance of bank account in CAD (canadian dollars)
      * @param accountNumber unique bank account number of person
      * @param lastName last name of the bank account owner
@@ -39,36 +38,47 @@ public class bankAccount
      * Deposits money into bank account in CAD (canadian dollars)
      * @param amountCad amount of money in CAD (canadian dollars)
      */
-    public void deposit(double amountCad) {
+    public void deposit(double amountCad)
+    {
         this.balanceCad += amountCad;
     }
 
     /**
-     * Transfers
+     * Transfers amount of money in CAD into another bank account number
      * @param amountCad amount of money in CAD
      * @param recipientAccount account number of person receiving the transferred money in CAD (canadian dollars)
      */
-    public void transfer(double amountCad, bankAccount recipientAccount) {
+    public void transfer(double amountCad,
+                         final bankAccount recipientAccount)
+    {
         recipientAccount.deposit(amountCad);
         this.withdraw(amountCad);
     }
+
+    // Accessors
 
     /**
      *
      * @return balance amount in CAD (canadian dollars)
      */
-    public double getBalanceCad() {
+    public double getBalanceCad()
+    {
         return balanceCad;
     }
 
     /**
      * @return the unique bank account number of person
      */
-    public String getAccountNumber() {
+    public String getAccountNumber()
+    {
         return accountNumber;
     }
 
-    public String getMemberLastName() {
+    /**
+     * @return the unique last name of the bank account member
+     */
+    public String getMemberLastName()
+    {
         return lastName;
     }
 }
