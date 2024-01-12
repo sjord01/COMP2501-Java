@@ -34,7 +34,7 @@ public class Date
         return year + "-" + month + "-" + day;
     }
 
-    //Accessors and mutators
+    //Accessors
 
     /**
      * Get the year of birth of a student
@@ -46,17 +46,6 @@ public class Date
     }
 
     /**
-     * Set the year of birth of a student
-     * @param year the year of birth of a student
-     */
-    /*
-    public void setYear(int year)
-    {
-        this.year = year;
-    }
-     */
-
-    /**
      * Access the month of birth of a student
      * @return the month of birth of a student
      */
@@ -66,18 +55,6 @@ public class Date
     }
 
     /**
-     * Set the month of birth of a student
-     * @param month the month of birth of a student
-     */
-
-    /*
-    public void setMonth(int month)
-    {
-        this.month = month;
-    }
-     */
-
-    /**
      * Access the day of birth of a student
      * @return the day of birth of a student
      */
@@ -85,16 +62,4 @@ public class Date
     {
         return day;
     }
-
-    /**
-     * Set the day of birth of a student
-     * @param day the day of birth of a student
-     */
-
-    /*
-    public void setDay(int day)
-    {
-        this.day = day;
-    }
-     */
 }

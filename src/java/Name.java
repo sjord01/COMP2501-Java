@@ -38,7 +38,7 @@ public class Name
         return firstName.toUpperCase().charAt(0) + "." + lastName.toUpperCase().charAt(0) + ".";
     }
 
-    //Accessors and mutators
+    //Accessors 
 
     /**
      *Access the first name of a student
@@ -49,16 +49,6 @@ public class Name
         return firstName;
     }
 
-    /**
-     * Set the first name of a student
-      * @param firstName the first name of a student
-     */
-    /*
-    public void setFirst(String firstName)
-    {
-        this.firstName = firstName;
-    }
-     */
 
     /**
      * Access the last name of a student
@@ -68,15 +58,4 @@ public class Name
     {
         return lastName;
     }
-
-    /**
-     * Set the last name of a student
-     * @param lastName the last name of a student
-     */
-    /*
-    public void setLast(String lastName)
-    {
-        this.lastName = lastName;
-    }
-     */
 }
