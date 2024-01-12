@@ -1,11 +1,11 @@
 /**
  * A bank account program with 'deposit', 'withdraw', and 'transfer' functionalities
  *
- * @author ross & sam ordonez
+ * @author raaz & sam ordonez
  * @version 1.0
  */
 
-public class bankAccount
+public class BankAccount
 {
     private double balanceCad;
 
@@ -17,7 +17,7 @@ public class bankAccount
      * @param accountNumber unique bank account number of person
      * @param lastName last name of the bank account owner
      */
-    public bankAccount(final double balanceCad,
+    public BankAccount(final double balanceCad,
                        final String accountNumber,
                        final String lastName)
     {
@@ -49,7 +49,7 @@ public class bankAccount
      * @param recipientAccount account number of person receiving the transferred money in CAD (canadian dollars)
      */
     public void transfer(double amountCad,
-                         final bankAccount recipientAccount)
+                         final BankAccount recipientAccount)
     {
         recipientAccount.deposit(amountCad);
         this.withdraw(amountCad);

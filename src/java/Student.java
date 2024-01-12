@@ -1,7 +1,7 @@
 /**
  * Parses student data and shows a record of it
  *
- * @author ross & sam ordonez
+ * @author raaz & sam ordonez
  * @version 1.0
  */
 public class Student

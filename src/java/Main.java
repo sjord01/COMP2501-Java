@@ -1,8 +1,8 @@
 public class Main {
     public static void main(final String[] args)
     {
-        final bankAccount b1;
-        final bankAccount b2;
+        final BankAccount b1;
+        final BankAccount b2;
 
         final Date date1;
         final Date date2;
@@ -13,8 +13,8 @@ public class Main {
         final Student student1;
         final Student student2;
 
-        b1 = new bankAccount(100.00, "abc123", "gates");
-        b2 = new bankAccount(500.00, "xyz789", "woods");
+        b1 = new BankAccount(100.00, "abc123", "gates");
+        b2 = new BankAccount(500.00, "xyz789", "woods");
 
         date1       = new Date(1975, 12, 30);
         name1       = new Name("Tiger", "Woods");

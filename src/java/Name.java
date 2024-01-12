@@ -1,13 +1,13 @@
 /**
  * Records the first and last name of a student
  *
- * @author ross & sam ordonez
+ * @author raaz & sam ordonez
  * @version 1.0
  */
 public class Name
 {
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
 
     /**
      * @param firstName the first name of a student
@@ -53,10 +53,12 @@ public class Name
      * Set the first name of a student
       * @param firstName the first name of a student
      */
+    /*
     public void setFirst(String firstName)
     {
         this.firstName = firstName;
     }
+     */
 
     /**
      * Access the last name of a student
@@ -71,8 +73,10 @@ public class Name
      * Set the last name of a student
      * @param lastName the last name of a student
      */
+    /*
     public void setLast(String lastName)
     {
         this.lastName = lastName;
     }
+     */
 }

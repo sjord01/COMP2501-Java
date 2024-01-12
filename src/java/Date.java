@@ -1,15 +1,15 @@
 /**
  * Records the year, month, and day when a student was born; date of birth
  *
- * @author ross & sam ordonez
+ * @author raaz & sam ordonez
  * @version 1.0
  */
 
 public class Date
 {
-    private int year;
-    private int month;
-    private int day;
+    private final int year;
+    private final int month;
+    private final int day;
 
     /**
      * @param year the year a student was born
@@ -31,7 +31,7 @@ public class Date
      */
     public String getYyMmDd()
     {
-        return "" + year + "-" + month + "-" + day;
+        return year + "-" + month + "-" + day;
     }
 
     //Accessors and mutators
@@ -47,12 +47,14 @@ public class Date
 
     /**
      * Set the year of birth of a student
-     * @return the year of birth of a student
+     * @param year the year of birth of a student
      */
+    /*
     public void setYear(int year)
     {
         this.year = year;
     }
+     */
 
     /**
      * Access the month of birth of a student
@@ -67,10 +69,13 @@ public class Date
      * Set the month of birth of a student
      * @param month the month of birth of a student
      */
+
+    /*
     public void setMonth(int month)
     {
         this.month = month;
     }
+     */
 
     /**
      * Access the day of birth of a student
@@ -85,8 +90,11 @@ public class Date
      * Set the day of birth of a student
      * @param day the day of birth of a student
      */
+
+    /*
     public void setDay(int day)
     {
         this.day = day;
     }
+     */
 }
