@@ -10,7 +10,7 @@ public class Student
     private final String studentNumber;
     private final Date dateOfBirth;
 
-    private boolean graduated;
+    private final boolean graduated;
 
     /**
      * @param firstAndLastName the first and last name of a student

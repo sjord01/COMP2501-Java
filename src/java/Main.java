@@ -1,8 +1,8 @@
 public class Main {
     public static void main(final String[] args)
     {
-        final BankAccount b1;
-        final BankAccount b2;
+        final BankAccount bank1;
+        final BankAccount bank2;
 
         final Date date1;
         final Date date2;
@@ -13,8 +13,8 @@ public class Main {
         final Student student1;
         final Student student2;
 
-        b1 = new BankAccount(100.00, "abc123", "gates");
-        b2 = new BankAccount(500.00, "xyz789", "woods");
+        bank1 = new BankAccount(100.00, "abc123", "gates");
+        bank2 = new BankAccount(500.00, "xyz789", "woods");
 
         date1       = new Date(1975, 12, 30);
         name1       = new Name("Tiger", "Woods");
@@ -24,19 +24,19 @@ public class Main {
         name2       = new Name("Bill", "Gates");
         student2    = new Student(name2, "A00987654", date2, false);
 
-        System.out.println(b1.getBalanceCad());
-        b1.withdraw(5.00);
-        System.out.println(b1.getAccountNumber());
-        System.out.println(b1.getBalanceCad());
+        System.out.println(bank1.getBalanceCad());
+        bank1.withdraw(5.00);
+        System.out.println(bank1.getAccountNumber());
+        System.out.println(bank1.getBalanceCad());
         System.out.println("---");
-        System.out.println(b2.getBalanceCad());
-        b2.deposit(23.00);
-        System.out.println(b2.getMemberLastName());
-        System.out.println(b2.getBalanceCad());
+        System.out.println(bank2.getBalanceCad());
+        bank2.deposit(23.00);
+        System.out.println(bank2.getMemberLastName());
+        System.out.println(bank2.getBalanceCad());
         System.out.println("---");
-        b1.transfer(50.00, b2);
-        System.out.println(b1.getBalanceCad());
-        System.out.println(b2.getBalanceCad());
+        bank1.transfer(50.00, bank2);
+        System.out.println(bank1.getBalanceCad());
+        System.out.println(bank2.getBalanceCad());
 
         System.out.println("---");
 

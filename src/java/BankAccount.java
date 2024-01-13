@@ -7,7 +7,7 @@
 
 public class BankAccount
 {
-    private double balanceCad;
+    private double       balanceCad;
 
     private final String accountNumber;
     private final String lastName;
@@ -30,7 +30,8 @@ public class BankAccount
      * Withdraws money from bank account in CAD (canadian dollars)
      * @param amountCad amount of money in CAD (canadian dollars)
      */
-    public void withdraw(double amountCad) {
+    public void withdraw(double amountCad)
+    {
         this.balanceCad -= amountCad;
     }
 

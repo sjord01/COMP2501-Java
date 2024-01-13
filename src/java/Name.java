@@ -38,7 +38,7 @@ public class Name
         return firstName.toUpperCase().charAt(0) + "." + lastName.toUpperCase().charAt(0) + ".";
     }
 
-    //Accessors 
+    //Accessors
 
     /**
      *Access the first name of a student
